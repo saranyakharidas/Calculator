@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Calculator</h1>
+      <div class="calculator">
+        <form>
+          <div class="display">
+            <input type="text" id="display" />
+          </div>
+
+          <div>
+            <input type="button" value="AC" onclick="clrScreen() " />
+            <input type="button" value="del" onclick="onDelete()" />
+            <input type="button" value="%" onclick="btnClick(this.value)" />
+            <input type="button" value="/" onclick="btnClick(this.value)" />
+          </div>
+          <div>
+            <input type="button" value="7" onclick="btnClick(this.value)" />
+            <input type="button" value="8" onclick="btnClick(this.value)" />
+            <input type="button" value="9" onclick="btnClick(this.value)" />
+            <input type="button" value="*" onclick="btnClick(this.value)" />
+          </div>
+          <div>
+            <input type="button" value="4" onclick="btnClick(this.value)" />
+            <input type="button" value="5" onclick="btnClick(this.value)" />
+            <input type="button" value="6" onclick="btnClick(this.value)" />
+            <input type="button" value="-" onclick="btnClick(this.value)" />
+          </div>
+          <div>
+            <input type="button" value="1" onclick="btnClick(this.value)" />
+            <input type="button" value="2" onclick="btnClick(this.value)" />
+            <input type="button" value="3" onclick="btnClick(this.value)" />
+            <input type="button" value="+" onclick="btnClick(this.value)" />
+          </div>
+          <div>
+            <input type="button" value="00" onclick="btnClick(this.value)" />
+            <input type="button" value="0" onclick="btnClick(this.value)" />
+            <input type="button" value="." onclick="btnClick(this.value)" />
+            <input type="button" value="=" onclick="findResult()" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
